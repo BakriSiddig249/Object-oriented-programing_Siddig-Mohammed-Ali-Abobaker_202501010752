@@ -1,16 +1,20 @@
 public class Main {
+
     public static void main(String[] args) {
 
-        Student student = new Student();
+        Appliance washingMachine = new WashingMachine("LG");
+        Appliance refrigerator = new Refrigerator("Panasonic");
 
-        student.setStudentID("CU12345");
-        student.setName("Ali");
-        student.setCGPA(3.75);
-        student.setProgramme("BIT");
+        washingMachine.displayBrand();
+        washingMachine.turnOn();
+        washingMachine.operate();
+        washingMachine.turnOff();
 
-        System.out.println("Student ID: " + student.getStudentID());
-        System.out.println("Name      : " + student.getName());
-        System.out.println("CGPA      : " + student.getCGPA());
-        System.out.println("Programme : " + student.getProgramme());
+        System.out.println();
+
+        refrigerator.displayBrand();
+        refrigerator.turnOn();
+        refrigerator.operate();
+        refrigerator.turnOff();
     }
 }

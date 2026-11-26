@@ -1,25 +1,11 @@
-public class Student {
-    String name;
-    int age;
-    double gpa;
+class Student extends Person {
 
-    public Student(String studentName, int studentAge, double studentGpa) {
-        name = studentName;
-        age = studentAge;
-        gpa = studentGpa;
+    public Student(String name, String id) {
+        super(name, id);
     }
 
-    public void displayInfo() {
-        System.out.println("Student Name: " + name);
-        System.out.println("Student Age: " + age);
-        System.out.println("Student GPA: " + gpa);
-    }
-
-    public void study() {
-        System.out.println(name + " is studying.");
-    }
-
-    public void takeExam() {
-        System.out.println(name + " is taking an exam.");
+    @Override
+    public void introduce() {
+        System.out.println("I am a student.");
     }
 }
