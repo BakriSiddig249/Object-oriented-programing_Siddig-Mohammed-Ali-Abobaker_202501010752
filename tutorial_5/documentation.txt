@@ -1,0 +1,25 @@
+Week 5 – Student Information System
+
+2.1. Why are variables made private?
+
+Variables are made private so that students’ information is secure.
+
+Other classes are therefore unable to both view and edit these variables.
+
+2.2. What occurs if the variables are public?
+
+Other classes will then be able to both view and edit variables.
+
+This compromises the security and control of the data.
+
+2.3. Why are getter and setter methods utilised?
+
+Getters can be used to view private variables.
+
+Setters can then be used to edit private variables under controlled circumstances.
+
+3.1. Further Variable
+
+I introduced another private variable which was labelled programme.
+
+To both view and edit this variable I wrote getProgramme() and setProgramme() methods.
